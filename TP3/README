@@ -1,0 +1,17 @@
+Algoritmos TP1:
+
+Para compilar sequencial.c -> gcc sequencial.c -o sequencial
+
+Para compilar tp1_mpi.c -> mpicc -fopenmp -o tp1_mpi  tp1_mpi.c -lm
+
+Para executar os arquivos -> ./tp1_mpi
+                              mpirun -np "número de slots(1, 2, ...)" ./tp1_mpi
+
+Algoritmos TP2:
+
+Para compilar tp1_mpi.c -> mpicc -o tp3_mpi tp3_mpi.c -lm -lpthread
+
+Para executar os arquivos -> ./tp1_mpi
+                              mpirun -np "número de slots(1, 2, ...)" ./tp3_mpi
+                              ou
+                              mpirun --use-hwthread-cpus -np "número de slots(1, 2, ...)" ./tp3_mpi
